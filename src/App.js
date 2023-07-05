@@ -11,7 +11,7 @@ const App = () => {
 
 const Full = () => {
   return (
-    <div >
+    <div className="full">
       <Pos />
       <Container_middle />
     </div>
@@ -19,7 +19,7 @@ const Full = () => {
 }
 const Pos = () => {
   return (
-    <div >
+    <div className = "pos" >
       <Desktop_header />
       <Search_drop_header_nothidden />
     </div>
@@ -27,7 +27,7 @@ const Pos = () => {
 }
 const Desktop_header = () => {
   return (
-    <div>
+    <div className="desktop-header">
       <div className="container-header" >
 
         <div className=".div_mob-container-header">
@@ -56,7 +56,7 @@ const Desktop_header = () => {
 }
 const Tip = () => {
   return (
-    <div >
+    <div className = "tip" >
       <ul className="navbar">
         <li className="navbar-link">
           <a className="a-navbar" href="#">projects</a>
@@ -81,7 +81,7 @@ const Tip = () => {
 }
 const Mobile_header = () => {
   return (
-    <div >
+    <div className = "mobile-header" >
       <div className="left_column">
         <div className="mobile-search">
           <input type="text" oninput="search_left_column()" class="input-search_left_column"
@@ -122,7 +122,7 @@ const Mobile_header = () => {
 
 const Search_drop_header_nothidden = () => {
   return (
-    <div >
+    <div className = "search-drop-header-nothidden">
       <div className="container-header">
         <div className="search-form-container">
           <input type="text" oninput="search()" className="input-search" placeholder="Search for..." />
@@ -136,7 +136,7 @@ const Search_drop_header_nothidden = () => {
 }
 const Container_middle = () => {
   return (
-    <div >
+    <div className = "container-middle">
       <div className="middle">
         <h1>
           Основные проекты
