@@ -13,19 +13,19 @@ const Full = () => {
   return (
     <div className="full">
       <Pos />
-      <Container_middle />
+      <ContainerMiddle />
     </div>
   );
 }
 const Pos = () => {
   return (
     <div className = "pos" >
-      <Desktop_header />
-      <Search_drop_header_nothidden />
+      <DesktopHeader />
+      <SearchDropHeaderNothidden />
     </div>
   );
 }
-const Desktop_header = () => {
+const DesktopHeader = () => {
   return (
     <div className="desktop-header">
       <div className="container-header" >
@@ -48,7 +48,7 @@ const Desktop_header = () => {
 
         <Tip />
       </div>
-      <Mobile_header />
+      <MobileHeader />
 
 
     </div>
@@ -70,7 +70,7 @@ const Tip = () => {
         <li className="navbar-link">
           <a className="a-navbar" href="#">training & certification</a>
         </li>
-        <li className="navbar-link search-navbar" onClick="sayHi()">
+        <li className="navbar-link search-navbar" >
           <a className="a-navbar-magnifying_glass" href="#">
 
           </a>
@@ -78,8 +78,9 @@ const Tip = () => {
       </ul>
     </div >
   );
+  
 }
-const Mobile_header = () => {
+const MobileHeader = () => {
   return (
     <div className = "mobile-header" >
       <div className="left_column">
@@ -120,7 +121,7 @@ const Mobile_header = () => {
   );
 }
 
-const Search_drop_header_nothidden = () => {
+const SearchDropHeaderNothidden = () => {
   return (
     <div className = "search-drop-header-nothidden">
       <div className="container-header">
@@ -134,7 +135,7 @@ const Search_drop_header_nothidden = () => {
     </div>
   );
 }
-const Container_middle = () => {
+const ContainerMiddle = () => {
   return (
     <div className = "container-middle">
       <div className="middle">
