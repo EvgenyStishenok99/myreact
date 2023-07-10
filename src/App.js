@@ -33,7 +33,7 @@ const DesktopHeader = () => {
         <div className=".div_mob-container-header">
 
         </div>
-        <div>
+        
           <span className="spring-logo-div">
             <a className="spring-logo" href="./my document.html">
               <span id="spring-logo-span">
@@ -44,7 +44,7 @@ const DesktopHeader = () => {
 
 
           </span>
-        </div>
+        
 
         <Tip />
       </div>
@@ -85,7 +85,7 @@ const MobileHeader = () => {
     <div className = "mobile-header" >
       <div className="left_column">
         <div className="mobile-search">
-          <input type="text" oninput="search_left_column()" class="input-search_left_column"
+          <input type="text" oninput="search_left_column()" className="input-search_left_column"
             placeholder="Search for..." />
         </div>
         <ul className="navbar">
@@ -98,7 +98,7 @@ const MobileHeader = () => {
           <li className="navbar-link">
             <a className="a-navbar" href="#">guides</a>
           </li>
-          <li classNmae="navbar-link">
+          <li className="navbar-link">
             <a className="a-navbar" href="#">blog</a>
           </li>
           <li className="navbar-link">
