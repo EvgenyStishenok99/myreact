@@ -78,17 +78,44 @@ p {
   padding: 0 20px 0;
   margin-left: 0 20px 0;
   display: flex;
-  justify-content: space-between;
-    
+ 
+  margin-top: 23px;
 }
-
-.spring-logo-div {
-  margin: 12px 0 6px;
-  width: 224px;
-  height: 46px;  
-  
+#icon-logo-2 {
+  background: url(./img/iconsprite-3f43d82fa4826e2d08fc096eb424c09e.png);
+  width: 135px;
+  height: 133px;
+  background-position: 513px 837px;
+  margin-top: 2px;
 }
-
+#icon-logo-3 {
+  background: url(./img/iconsprite-3f43d82fa4826e2d08fc096eb424c09e.png);
+  width: 130px;
+  height: 105px;
+  background-position: 669px 1072px;
+  margin-top: 11px;
+}
+#icon-logo-4 {
+  background: url(./img/iconsprite-3f43d82fa4826e2d08fc096eb424c09e.png);
+  width: 150px;
+  height: 111px;
+  background-position: 253px 955px;
+  margin-top: 13px;
+}
+#icon-logo-5 {
+  background: url(./img/iconsprite-3f43d82fa4826e2d08fc096eb424c09e.png);
+  width: 111px;
+  height: 111px;
+  background-position: 519px 512px;
+  margin-top: 13px;
+}
+#icon-logo-6 {
+  background: url(./img/iconsprite-3f43d82fa4826e2d08fc096eb424c09e.png);
+  width: 145px;
+  height: 104px;
+  background-position: 361px 677px;
+  margin-top: 16px;
+}
 
 .navbar-link {
   color: #eee;
