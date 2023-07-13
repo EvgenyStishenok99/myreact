@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+
 const App = () => {
   return (
     <div className='body' >
@@ -26,13 +27,14 @@ const Pos = () => {
   );
 }
 const DesktopHeader = () => {
+  
   return (
     <div className="desktop-header">
       <div className="container-header" >
 
         <div className=".div_mob-container-header">
 
-        </div>
+         </div>
         
           <span className="spring-logo-div">
             <a className="spring-logo" href="./my document.html">
@@ -46,7 +48,7 @@ const DesktopHeader = () => {
           </span>
         
 
-        <Tip />
+         <Tip />
       </div>
       <MobileHeader />
 
@@ -55,6 +57,20 @@ const DesktopHeader = () => {
   );
 }
 const Tip = () => {
+  function sayHi(){
+    if (document.querySelector('.search-drop-header-nothidden') ){
+        let elem = document.querySelector('.search-drop-header-nothidden');
+        elem.classList.add("search-drop-header");
+        elem.classList.remove("search-drop-header-nothidden");
+    } else {
+        let elem = document.querySelector('.search-drop-header');
+        elem.classList.add("search-drop-header-nothidden");
+        elem.classList.remove("search-drop-header");
+       
+    }
+    
+}
+  
   return (
     <div className = "tip" >
       <ul className="navbar">
@@ -70,7 +86,7 @@ const Tip = () => {
         <li className="navbar-link">
           <a className="a-navbar" href="#">training & certification</a>
         </li>
-        <li className="navbar-link search-navbar" >
+        <li className="navbar-link search-navbar"   onClick={sayHi}>
           <a className="a-navbar-magnifying_glass" href="#">
 
           </a>
