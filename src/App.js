@@ -19,14 +19,27 @@ const Full = () => {
   );
 }
 const Pos = () => {
+  function sayHi(){
+    if (document.querySelector('.search-drop-header-nothidden') ){
+        let elem = document.querySelector('.search-drop-header-nothidden');
+        elem.classList.add("search-drop-header");
+        elem.classList.remove("search-drop-header-nothidden");
+    } else {
+        let elem = document.querySelector('.search-drop-header');
+        elem.classList.add("search-drop-header-nothidden");
+        elem.classList.remove("search-drop-header");
+       
+    }
+    
+}
   return (
     <div className = "pos" >
-      <DesktopHeader />
+      <DesktopHeader showDropHeader={sayHi} />
       <SearchDropHeaderNothidden />
     </div>
   );
 }
-const DesktopHeader = () => {
+const DesktopHeader = (props) : void => {
   
   return (
     <div className="desktop-header">
@@ -48,7 +61,7 @@ const DesktopHeader = () => {
           </span>
         
 
-         <Tip />
+          <Tip showDropHeader={props.showDropHeader}></Tip>
       </div>
       <MobileHeader />
 
@@ -56,20 +69,8 @@ const DesktopHeader = () => {
     </div>
   );
 }
-const Tip = () => {
-  function sayHi(){
-    if (document.querySelector('.search-drop-header-nothidden') ){
-        let elem = document.querySelector('.search-drop-header-nothidden');
-        elem.classList.add("search-drop-header");
-        elem.classList.remove("search-drop-header-nothidden");
-    } else {
-        let elem = document.querySelector('.search-drop-header');
-        elem.classList.add("search-drop-header-nothidden");
-        elem.classList.remove("search-drop-header");
-       
-    }
-    
-}
+const Tip = (props) => {
+ 
   
   return (
     <div className = "tip" >
@@ -86,7 +87,7 @@ const Tip = () => {
         <li className="navbar-link">
           <a className="a-navbar" href="#">training & certification</a>
         </li>
-        <li className="navbar-link search-navbar"   onClick={sayHi}>
+        <li className="navbar-link search-navbar" onClick={props.showDropHeader}>
           <a className="a-navbar-magnifying_glass" href="#">
 
           </a>
