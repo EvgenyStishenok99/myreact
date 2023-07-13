@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import React, {useState} from 'react';
 
 const App = () => {
   return (
@@ -19,27 +19,19 @@ const Full = () => {
   );
 }
 const Pos = () => {
-  function sayHi(){
-    if (document.querySelector('.search-drop-header-nothidden') ){
-        let elem = document.querySelector('.search-drop-header-nothidden');
-        elem.classList.add("search-drop-header");
-        elem.classList.remove("search-drop-header-nothidden");
-    } else {
-        let elem = document.querySelector('.search-drop-header');
-        elem.classList.add("search-drop-header-nothidden");
-        elem.classList.remove("search-drop-header");
-       
-    }
+  const [isShowDropHeader, setIsShowDropHeader] = useState(false);
+  const sayHi = () =>{
+   setIsShowDropHeader (!isShowDropHeader)
     
 }
   return (
     <div className = "pos" >
       <DesktopHeader showDropHeader={sayHi} />
-      <SearchDropHeaderNothidden />
+      <SearchDropHeaderNothidden isShowDropHeader={isShowDropHeader} />
     </div>
   );
 }
-const DesktopHeader = (props) : void => {
+const DesktopHeader = (props)  => {
   
   return (
     <div className="desktop-header">
@@ -138,9 +130,9 @@ const MobileHeader = () => {
   );
 }
 
-const SearchDropHeaderNothidden = () => {
+const SearchDropHeaderNothidden = (props) => {
   return (
-    <div className = "search-drop-header-nothidden">
+    <div className ={props.isShowDropHeader ? 'search-drop-header' : 'search-drop-header-nothidden'}>
       <div className="container-header">
         <div className="search-form-container">
           <input type="text" oninput="search()" className="input-search" placeholder="Search for..." />
