@@ -1,12 +1,16 @@
 import DesktopHeader from "./DesktopHeader";
 import React, {useState} from 'react';
 import SearchDropHeaderNothidden from "./SearchDropHeaderNothidden";
+
+
 const ObjectFromAbove = () => {
+
     const [isShowDropHeader, setIsShowDropHeader] = useState(false);
+
     const sayHi = () =>{
-     setIsShowDropHeader (!isShowDropHeader)
-      
+     setIsShowDropHeader (!isShowDropHeader)      
   }
+
     return (
       <div className = "objectFromAbove" >
         <DesktopHeader showDropHeader={sayHi} />
@@ -16,3 +20,4 @@ const ObjectFromAbove = () => {
   }
 
   export default ObjectFromAbove;
+  
