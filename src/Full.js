@@ -1,9 +1,9 @@
 import ContainerMiddle from "./ContainerMiddle";
-import Pos from "./Pos";
+import ObjectFromAbove from "./ObjectFromAbove";
 const Full = () => {
     return (
       <div className="full">
-        <Pos />
+        <ObjectFromAbove />
         <ContainerMiddle />
       </div>
     );
