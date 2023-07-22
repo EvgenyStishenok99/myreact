@@ -31,7 +31,7 @@ const ContainerMiddle = () => {
       {id: 6,
         icon: 'icon-logo-6',
         title: 'SPRING INTEGRATION',
-        description: ' Supports the well-known <em> Enterprise Integration Patterns </em> via lightweight messaging and declarative adapters.'  
+        description: ' Supports the well-known <em>Enterprise Integration Patterns</em> via lightweight messaging and declarative adapters.'  
       },
 
 ]

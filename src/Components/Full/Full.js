@@ -1,4 +1,4 @@
-import ContainerMiddle from "./Components/ContainerMiddle/";
+import ContainerMiddle from "./ContainerMiddle";
 import ObjectFromAbove from "./ObjectFromAbove";
 const Full = () => {
     return (
