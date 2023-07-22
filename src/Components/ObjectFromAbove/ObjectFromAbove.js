@@ -1,6 +1,6 @@
-import DesktopHeader from "./DesktopHeader";
+import DesktopHeader from "../DesktopHeader/DesktopHeader";
 import React, {useState} from 'react';
-import SearchDropHeaderNothidden from "./SearchDropHeaderNothidden";
+import SearchDropHeaderNothidden from "../SearhDropHeaderNohidden/SearchDropHeaderNothidden";
 
 
 const ObjectFromAbove = () => {

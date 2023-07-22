@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Full from './Full';
+import Full from "./Components/Full/Full";
 
 const App = () => {
   return (

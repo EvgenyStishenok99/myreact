@@ -1,4 +1,4 @@
-import ContainerSection from "./container-section"
+import ContainerSection from "../container-section/container-section"
 const ContainerMiddle = () => {
   const arrayForSections= [
     {id: 1,

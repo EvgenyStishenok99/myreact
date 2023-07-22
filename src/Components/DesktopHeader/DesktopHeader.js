@@ -1,5 +1,5 @@
-import Tip from "./Tip";
-import MobileHeader from "./MobileHeader";
+import Tip from "../Tip/Tip";
+import MobileHeader from "../MoobileHeader/MobileHeader";
 const DesktopHeader = (props)  => {
   
     return (

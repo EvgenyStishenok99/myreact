@@ -1,5 +1,5 @@
-import ContainerMiddle from "./ContainerMiddle";
-import ObjectFromAbove from "./ObjectFromAbove";
+import ContainerMiddle from "../ContainerMiddle/ContainerMiddle";
+import ObjectFromAbove from "../ObjectFromAbove/ObjectFromAbove";
 const Full = () => {
     return (
       <div className="full">
