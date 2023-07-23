@@ -1,3 +1,4 @@
+import "../SearhDropHeaderNohidden/SearchDropHeader.css"
 const SearchDropHeaderNothidden = (props) => {
     function search(){
         let input = document.querySelector('.input-search');

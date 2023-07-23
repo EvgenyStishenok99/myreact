@@ -1,5 +1,6 @@
 import Tip from "../Tip/Tip";
 import MobileHeader from "../MoobileHeader/MobileHeader";
+import "../DesktopHeader/DesktopHeader.css"; 
 const DesktopHeader = (props)  => {
   
     return (

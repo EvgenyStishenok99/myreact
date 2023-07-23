@@ -1,3 +1,4 @@
+import "../Tip/Tip.css";
 const Tip = (props) => {
  
   

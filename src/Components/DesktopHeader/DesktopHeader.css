@@ -1,0 +1,48 @@
+.desktop-header {
+    background-color: #34302d;
+    border-top: 4px solid #6db33f;
+    height: 70px;  
+    position:relative; 
+    z-index: 2;  
+  }
+  .container-header {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 70px;
+    padding: 0 20px 0;
+    margin-left: 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+      
+  }
+  .spring-logo-div {
+    margin: 12px 0 6px;
+    width: 224px;
+    height: 46px;  
+    
+  }
+  #spring-logo-span {
+    background: url(../DesktopHeader/spring-logo-3b6f842fa77c3bea3bac17dbce36a101.png);
+    display: block;
+    height: 46px;
+    width: 224px;
+    margin: auto -80px;
+  }
+  @media screen and (max-width: 1000px) and (min-width: 601px) {
+    .spring-logo-div{
+        margin-left: 30%;
+        display: none;
+        }
+  }
+  @media screen and (max-width: 600px) {    
+  
+    .spring-logo-div{
+        margin-left: 22%;
+        display: none;
+        }
+    }
+
+ 
+  
+   
+  

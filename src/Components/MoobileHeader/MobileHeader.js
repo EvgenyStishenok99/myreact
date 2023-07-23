@@ -1,3 +1,4 @@
+import "../MoobileHeader/MobileHeader.css";
 const MobileHeader = () => {
     function menu() {
         if(document.querySelector('.left_column')) {

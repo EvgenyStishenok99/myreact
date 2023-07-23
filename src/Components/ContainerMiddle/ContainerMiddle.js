@@ -1,3 +1,4 @@
+import "../ContainerMiddle/ContainerMiddle.css"
 import ContainerSection from "../container-section/container-section"
 const ContainerMiddle = () => {
   const arrayForSections= [

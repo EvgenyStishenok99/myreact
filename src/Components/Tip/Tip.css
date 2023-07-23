@@ -1,0 +1,82 @@
+.navbar-link {
+    color: #eee;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 28px 20px;  
+   
+  }
+  .a-navbar{
+    text-decoration: none;
+    color: #eee;
+    
+    
+  }
+  li{
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  ul{  
+    margin: 0; 
+    list-style-type: none;
+    
+  }
+  .navbar {
+    display: flex;  
+    margin-left: auto;
+  }
+  .a-navbar-magnifying_glass{
+    background: url(../Tip/logo-search.png);
+    display: block;
+    height: 29px;
+    width: 34px;
+    margin: -6px;
+    
+  }
+  @media screen and (max-width: 1000px) and (min-width: 601px) {
+    .tip {
+    display: none;
+    }
+    .navbar{
+        display: block;
+        padding: 0;
+      }
+      .navbar-link{
+        padding: 15px;
+        border-bottom: 1px solid #474441;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 15px;
+        outline: none;
+      }
+  }
+  @media screen and (max-width: 600px) {    
+   .tip {
+        display: none;
+        }
+        .navbar{
+            display: block;
+            padding: 0;
+        }
+        .navbar-link{
+            padding: 15px;
+            border-bottom: 1px solid #474441;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 15px;
+            outline: none;
+        }
+    }
+  
+      
+      
+     
+    
+  
+ 
+  
+    
+   
