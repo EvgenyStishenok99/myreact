@@ -1,163 +1,53 @@
 .navbar-link {
-    color: #eee;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 14px;
-    font-weight: 700;
-    cursor: pointer;
-    padding: 28px 20px;  
-   
-  }
-  .a-navbar{
-    text-decoration: none;
-    color: #eee;
-    
-    
-  }
-  li{
-    margin: 0;
-    font-size: 15px;
-    line-height: 20px;
-  }
-  ul{  
-    margin: 0; 
-    list-style-type: none;
-    
-  }
-  .navbar {
-    display: flex;  
-    margin-left: auto;
-  }
+  color: #eee;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 28px 20px;
+}
+.a-navbar {
+  text-decoration: none;
+  color: #eee;
+}
+li {
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+.navbar {
+  display: flex;
+  margin-left: auto;
+}
+.navbar-link-b {
+  display: none;
+}
+.burger {
+  background: url(../MoobileHeader/nav-sidebar.png);
+  display: block;
+  height: 18px;
+  width: 20px;
+  margin: auto;
+}
+.mobile-header {
+  display: none;
+}
+@media screen and (max-width: 1000px) and (min-width: 601px) {
   .navbar-link-b {
-    display: none;
-  }
-  .burger{
-    background: url(../MoobileHeader/nav-sidebar.png);
     display: block;
-    height: 18px;
-    width: 20px;
-    margin: auto;
-    
-  }
-  .mobile-header{
-    display: none;
-  }
-  @media screen and (max-width: 1000px) and (min-width: 601px) {
 
-    .navbar-link-b {
-        display: block;
-       
-        margin-top: -220%;
-        
-    }
-    .mobile-header{
-        display: flex;
-        justify-content: space-between;
-        
-        
-    }
-    .left_column_open{
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 270px;
-        background-color: #34302d;
-        padding-bottom: 1000px;
-        transition-duration: 1s;
-        
-      }
-      .left_column{
-        display: block;
-        position: absolute;
-        top: 0;
-        left: -270px;
-        min-width: 270px;
-        background-color: #34302d;
-        padding-bottom: 1000px;
-        transition-duration: 1s;
-        z-index: 1;
-        
-      }
-      .mobile-search{
-        margin: 9px;
-        padding: 5px;
-        background-color: #464340;
-        
-      }
-      .navbar{
-        display: block;
-        padding: 0;
-      }
-      .navbar-link{
-        padding: 15px;
-        border-bottom: 1px solid #474441;
-        font-size: 13px;
-        font-weight: 300;
-        line-height: 15px;
-        outline: none;
-      }
-      .input-search_left_column{
-        border: none;
-        color: #34302d;
-        outline:none;
-        height: 30px;
-        font-size: 21px;
-        line-height: 29px;
-        padding: 25px 0;
-        width: 90%;
-        background-color: transparent;
-        padding: 0 10% 0 0;
-        color: #f1f1f1;
-        font-size: 15px;
-        font-weight: 500;
-        z-index: 2;
-      }
-      .div_mob-container-header_open {
-        max-width: 1000px;
-        height: 56px;
-        padding: 0 20px 0 270px;
-        display: flex;
-        flex-grow: 1;
-        transition-duration: 1s;
-      }
-      .div_mob-container-header {
-        max-width: 1000px;
-        height: 56px;
-        padding: 0 20px 0 20px;
-        display: flex;
-        flex-grow: 1;
-        transition-duration: 1s;
-      }
-      .mob-spring-logo-div2 {
-        margin: -56px auto ;
-        width: 165px;
-        height: 46px;  
-      }
-      #mob-spring-logo-span {
-        background: url(../MoobileHeader/spring-logo-3b6f842fa77c3bea3bac17dbce36a101.png);
-        display: block;
-        background-position: 0 46px;
-        height: 46px;
-        width: 165px;
-        margin: auto 0;
-      }   
+    margin-top: -220%;
   }
-  @media screen and (max-width: 600px) {   
-    .navbar-link-b {
-        display: block;
-        margin-top: -220%;  
-    }
-   
-    
-    .mobile-header{
-        display: flex;
-        justify-content: space-between;
-        
-        
-    }
-
-.left_column_open{
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left_column_open {
     display: block;
     position: absolute;
     top: 0;
@@ -166,9 +56,8 @@
     background-color: #34302d;
     padding-bottom: 1000px;
     transition-duration: 1s;
-    
-}
-.left_column{
+  }
+  .left_column {
     display: block;
     position: absolute;
     top: 0;
@@ -178,60 +67,28 @@
     padding-bottom: 1000px;
     transition-duration: 1s;
     z-index: 1;
-    
-}
-.navbar{
+  }
+  .mobile-search {
+    margin: 9px;
+    padding: 5px;
+    background-color: #464340;
+  }
+  .navbar {
     display: block;
     padding: 0;
-}
-.navbar-link{
+  }
+  .navbar-link {
     padding: 15px;
     border-bottom: 1px solid #474441;
     font-size: 13px;
     font-weight: 300;
     line-height: 15px;
     outline: none;
-}
-.div_mob-container-header_open {
-    max-width: 1000px;
-    height: 56px;
-    padding: 0 20px 0 270px;
-    display: flex;
-    flex-grow: 1;
-    transition-duration: 1s;
-}
-.div_mob-container-header {
-    max-width: 1000px;
-    height: 56px;
-    padding: 0 20px 0 20px;
-    display: flex;
-    flex-grow: 1;
-    transition-duration: 1s;
-}
-.mob-spring-logo-div2 {
-    margin: -56px auto ;
-    width: 165px;
-    height: 46px;  
-}
-#mob-spring-logo-span {
-    background: url(../MoobileHeader/spring-logo-3b6f842fa77c3bea3bac17dbce36a101.png);
-    display: block;
-    background-position: 0 46px;
-    height: 46px;
-    width: 165px;
-    margin: auto 0;
-}   
-.mobile-search{
-    margin: 9px;
-    padding: 5px;
-    background-color: #464340;
-    
-}
-  
-.input-search_left_column{
+  }
+  .input-search_left_column {
     border: none;
     color: #34302d;
-    outline:none;
+    outline: none;
     height: 30px;
     font-size: 21px;
     line-height: 29px;
@@ -243,6 +100,130 @@
     font-size: 15px;
     font-weight: 500;
     z-index: 2;
+  }
+  .div_mob-container-header_open {
+    max-width: 1000px;
+    height: 56px;
+    padding: 0 20px 0 270px;
+    display: flex;
+    flex-grow: 1;
+    transition-duration: 1s;
+  }
+  .div_mob-container-header {
+    max-width: 1000px;
+    height: 56px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-grow: 1;
+    transition-duration: 1s;
+  }
+  .mob-spring-logo-div2 {
+    margin: -56px auto;
+    width: 165px;
+    height: 46px;
+  }
+  #mob-spring-logo-span {
+    background: url(../MoobileHeader/spring-logo-3b6f842fa77c3bea3bac17dbce36a101.png);
+    display: block;
+    background-position: 0 46px;
+    height: 46px;
+    width: 165px;
+    margin: auto 0;
+  }
 }
+@media screen and (max-width: 600px) {
+  .navbar-link-b {
+    display: block;
+    margin-top: -220%;
+  }
 
-   }
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left_column_open {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 270px;
+    background-color: #34302d;
+    padding-bottom: 1000px;
+    transition-duration: 1s;
+  }
+  .left_column {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -270px;
+    min-width: 270px;
+    background-color: #34302d;
+    padding-bottom: 1000px;
+    transition-duration: 1s;
+    z-index: 1;
+  }
+  .navbar {
+    display: block;
+    padding: 0;
+  }
+  .navbar-link {
+    padding: 15px;
+    border-bottom: 1px solid #474441;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+    outline: none;
+  }
+  .div_mob-container-header_open {
+    max-width: 1000px;
+    height: 56px;
+    padding: 0 20px 0 270px;
+    display: flex;
+    flex-grow: 1;
+    transition-duration: 1s;
+  }
+  .div_mob-container-header {
+    max-width: 1000px;
+    height: 56px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-grow: 1;
+    transition-duration: 1s;
+  }
+  .mob-spring-logo-div2 {
+    margin: -56px auto;
+    width: 165px;
+    height: 46px;
+  }
+  #mob-spring-logo-span {
+    background: url(../MoobileHeader/spring-logo-3b6f842fa77c3bea3bac17dbce36a101.png);
+    display: block;
+    background-position: 0 46px;
+    height: 46px;
+    width: 165px;
+    margin: auto 0;
+  }
+  .mobile-search {
+    margin: 9px;
+    padding: 5px;
+    background-color: #464340;
+  }
+
+  .input-search_left_column {
+    border: none;
+    color: #34302d;
+    outline: none;
+    height: 30px;
+    font-size: 21px;
+    line-height: 29px;
+    padding: 25px 0;
+    width: 90%;
+    background-color: transparent;
+    padding: 0 10% 0 0;
+    color: #f1f1f1;
+    font-size: 15px;
+    font-weight: 500;
+    z-index: 2;
+  }
+}
