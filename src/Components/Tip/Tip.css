@@ -1,13 +1,4 @@
-.navbar-link {
-  color: #eee;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  padding: 28px 20px;
-}
-.a-navbar {
+.anavbar {
   text-decoration: none;
   color: #eee;
 }
@@ -24,7 +15,7 @@ ul {
   display: flex;
   margin-left: auto;
 }
-.a-navbar-magnifying_glass {
+.anavbar-magnifying_glass {
   background: url(../Tip/logo-search.png);
   display: block;
   height: 29px;
@@ -39,14 +30,6 @@ ul {
     display: block;
     padding: 0;
   }
-  .navbar-link {
-    padding: 15px;
-    border-bottom: 1px solid #474441;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 15px;
-    outline: none;
-  }
 }
 @media screen and (max-width: 600px) {
   .tip {
@@ -55,13 +38,5 @@ ul {
   .navbar {
     display: block;
     padding: 0;
-  }
-  .navbar-link {
-    padding: 15px;
-    border-bottom: 1px solid #474441;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 15px;
-    outline: none;
   }
 }

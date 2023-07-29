@@ -46,27 +46,27 @@ const MobileHeader = () => {
         </div>
         <ul className="navbar">
           <li className="navbar-link">
-            <a className="a-navbar" href="#">
+            <a className="anavbar" href="#">
               home
             </a>
           </li>
           <li className="navbar-link">
-            <a className="a-navbar" href="#">
+            <a className="anavbar" href="#">
               projects
             </a>
           </li>
           <li className="navbar-link">
-            <a className="a-navbar" href="#">
+            <a className="anavbar" href="#">
               guides
             </a>
           </li>
           <li className="navbar-link">
-            <a className="a-navbar" href="#">
+            <a className="anavbar" href="#">
               blog
             </a>
           </li>
           <li className="navbar-link">
-            <a className="a-navbar" href="#">
+            <a className="anavbar" href="#">
               training & certification
             </a>
           </li>
