@@ -1,3 +1,4 @@
+import Navbar from "../Navbar/navbar";
 import "../MoobileHeader/MobileHeader.css";
 const MobileHeader = () => {
   function menu() {
@@ -32,7 +33,12 @@ const MobileHeader = () => {
       }
     });
   }
-
+  const arrayForAbove = [
+    { id: 1, anavbar: "projects" },
+    { id: 2, anavbar: "guides" },
+    { id: 3, anavbar: "blog" },
+    { id: 4, anavbar: "training & certifications" },
+  ];
   return (
     <div className="mobile-header">
       <div className="left_column">
@@ -45,31 +51,9 @@ const MobileHeader = () => {
           />
         </div>
         <ul className="navbar">
-          <li className="navbar-link">
-            <a className="anavbar" href="#">
-              home
-            </a>
-          </li>
-          <li className="navbar-link">
-            <a className="anavbar" href="#">
-              projects
-            </a>
-          </li>
-          <li className="navbar-link">
-            <a className="anavbar" href="#">
-              guides
-            </a>
-          </li>
-          <li className="navbar-link">
-            <a className="anavbar" href="#">
-              blog
-            </a>
-          </li>
-          <li className="navbar-link">
-            <a className="anavbar" href="#">
-              training & certification
-            </a>
-          </li>
+          {arrayForAbove.map((item) => {
+            return <Navbar key={item.id} anavbar={item.anavbar} />;
+          })}
         </ul>
       </div>
       <div className="div_mob-container-header">
