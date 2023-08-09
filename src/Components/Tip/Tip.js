@@ -1,5 +1,8 @@
 import "../Tip/Tip.css";
 import Navbar from "../Navbar/navbar";
+//array for above - странное название
+//anavbar - тоже бы не выкупил что значит 
+// константы выносить за компонент
 const Tip = (props) => {
   const arrayForAbove = [
     { id: 1, anavbar: "projects" },

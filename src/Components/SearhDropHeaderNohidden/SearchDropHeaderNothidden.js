@@ -1,4 +1,12 @@
 import "../SearhDropHeaderNohidden/SearchDropHeader.css";
+
+/* переписать эту шляпу с сеарчом 
+
+Подсказка - сеарч нужно вынести в самый верх в юзСтэйт и пробрасывать вниз по компонентам значение чтобы потом 
+фильтровать массив
+
+*/ 
+
 const SearchDropHeaderNothidden = (props) => {
   function search() {
     let input = document.querySelector(".input-search");
