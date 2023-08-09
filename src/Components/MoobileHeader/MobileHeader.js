@@ -34,10 +34,11 @@ const MobileHeader = () => {
     });
   }
   const arrayForAbove = [
-    { id: 1, anavbar: "projects" },
-    { id: 2, anavbar: "guides" },
-    { id: 3, anavbar: "blog" },
-    { id: 4, anavbar: "training & certifications" },
+    { id: 1, anavbar: "home" },
+    { id: 2, anavbar: "projects" },
+    { id: 3, anavbar: "guides" },
+    { id: 4, anavbar: "blog" },
+    { id: 5, anavbar: "training & certifications" },
   ];
   return (
     <div className="mobile-header">
