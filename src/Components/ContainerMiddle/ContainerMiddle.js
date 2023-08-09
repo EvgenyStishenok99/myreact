@@ -47,10 +47,6 @@ const sectionsArray = [
       " Supports the well-known <em>Enterprise Integration Patterns</em> via lightweight messaging and declarative adapters.",
   },
 ];
-/* 
-вынес константы за компонент, чтобы она создавалась один раз и навсегда
-так как если компонент перерендеривается то каждый раз и будет создаваться этот массив внутри этого компонента, это лишнее действие
-*/
 const ContainerMiddle = () => {
   return (
     <div className="container-middle">

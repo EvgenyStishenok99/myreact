@@ -1,8 +1,8 @@
 const Navbar = (props) => {
   return (
     <li className="navbar-link">
-      <a className="anavbar" href="#">
-        {props.anavbar}
+      <a className="navbar" href="#">
+        {props.navbar}
       </a>
     </li>
   );

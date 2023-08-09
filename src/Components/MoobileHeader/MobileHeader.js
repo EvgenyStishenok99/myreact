@@ -1,5 +1,12 @@
 import Navbar from "../Navbar/navbar";
 import "../MoobileHeader/MobileHeader.css";
+const panel = [
+  { id: 1, navbar: "home" },
+  { id: 2, navbar: "projects" },
+  { id: 3, navbar: "guides" },
+  { id: 4, navbar: "blog" },
+  { id: 5, navbar: "training & certifications" },
+];
 const MobileHeader = () => {
   function menu() {
     if (document.querySelector(".left_column")) {
@@ -33,13 +40,7 @@ const MobileHeader = () => {
       }
     });
   }
-  const arrayForAbove = [
-    { id: 1, anavbar: "home" },
-    { id: 2, anavbar: "projects" },
-    { id: 3, anavbar: "guides" },
-    { id: 4, anavbar: "blog" },
-    { id: 5, anavbar: "training & certifications" },
-  ];
+
   return (
     <div className="mobile-header">
       <div className="left_column">
@@ -52,8 +53,8 @@ const MobileHeader = () => {
           />
         </div>
         <ul className="navbar">
-          {arrayForAbove.map((item) => {
-            return <Navbar key={item.id} anavbar={item.anavbar} />;
+          {panel.map((item) => {
+            return <Navbar key={item.id} navbar={item.navbar} />;
           })}
         </ul>
       </div>

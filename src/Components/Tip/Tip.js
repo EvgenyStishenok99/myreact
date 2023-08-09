@@ -1,27 +1,23 @@
 import "../Tip/Tip.css";
 import Navbar from "../Navbar/navbar";
-//array for above - странное название
-//anavbar - тоже бы не выкупил что значит 
-// константы выносить за компонент
+const panel = [
+  { id: 1, navbar: "projects" },
+  { id: 2, navbar: "guides" },
+  { id: 3, navbar: "blog" },
+  { id: 4, navbar: "training & certifications" },
+];
 const Tip = (props) => {
-  const arrayForAbove = [
-    { id: 1, anavbar: "projects" },
-    { id: 2, anavbar: "guides" },
-    { id: 3, anavbar: "blog" },
-    { id: 4, anavbar: "training & certifications" },
-  ];
-
   return (
     <div className="tip">
       <ul className="navbar">
-        {arrayForAbove.map((item) => {
-          return <Navbar key={item.id} anavbar={item.anavbar} />;
+        {panel.map((item) => {
+          return <Navbar key={item.id} navbar={item.navbar} />;
         })}
         <li
           className="navbar-link search-navbar"
           onClick={props.showDropHeader}
         >
-          <a className="anavbar-magnifying_glass" href="#"></a>
+          <a className="navbar-magnifying_glass" href="#"></a>
         </li>
       </ul>
     </div>

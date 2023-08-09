@@ -1,4 +1,4 @@
-.anavbar {
+.navbar {
   text-decoration: none;
   color: #eee;
 }
@@ -15,7 +15,7 @@ ul {
   display: flex;
   margin-left: auto;
 }
-.anavbar-magnifying_glass {
+.navbar-magnifying_glass {
   background: url(../Tip/logo-search.png);
   display: block;
   height: 29px;
