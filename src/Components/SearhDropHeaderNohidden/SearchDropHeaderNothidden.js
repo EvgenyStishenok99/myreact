@@ -5,23 +5,11 @@ import "../SearhDropHeaderNohidden/SearchDropHeader.css";
 Подсказка - сеарч нужно вынести в самый верх в юзСтэйт и пробрасывать вниз по компонентам значение чтобы потом 
 фильтровать массив
 
-*/ 
+*/
 
 const SearchDropHeaderNothidden = (props) => {
-  function search() {
-    let input = document.querySelector(".input-search");
-    let titles = document.querySelectorAll(".project-title");
-
-    let stringToFind = input.value.toUpperCase();
-    titles.forEach((item) => {
-      let title = item.textContent;
-
-      if (title.includes(stringToFind)) {
-        item.closest(".container-section").style.display = "block";
-      } else {
-        item.closest(".container-section").style.display = "none";
-      }
-    });
+  function search(evt) {
+    props.onChangeHandler(evt.currentTarget.value);
   }
   return (
     <div
@@ -35,7 +23,7 @@ const SearchDropHeaderNothidden = (props) => {
         <div className="search-form-container">
           <input
             type="text"
-            onInput={search}
+            onChange={search}
             className="input-search"
             placeholder="Search for..."
           />
