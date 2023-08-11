@@ -9,7 +9,11 @@ const ObjectFromAbove = (props) => {
   };
   return (
     <div className="objectFromAbove">
-      <DesktopHeader showDropHeader={sayHi} />
+      <DesktopHeader
+        showDropHeader={sayHi}
+        inputValue={props.inputValue}
+        onChangeHandler={props.onChangeHandler}
+      />
       <SearchDropHeaderNothidden
         isShowDropHeader={isShowDropHeader}
         inputValue={props.inputValue}

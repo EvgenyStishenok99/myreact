@@ -7,7 +7,7 @@ const panel = [
   { id: 4, navbar: "blog" },
   { id: 5, navbar: "training & certifications" },
 ];
-const MobileHeader = () => {
+const MobileHeader = (props) => {
   function menu() {
     if (document.querySelector(".left_column")) {
       let magic = document.querySelector(".left_column");
@@ -25,7 +25,7 @@ const MobileHeader = () => {
       mag.classList.remove("div_mob-container-header_open");
     }
   }
-  function search_left_column() {
+  /*function search_left_column() {
     let input = document.querySelector(".input-search_left_column");
     let titles = document.querySelectorAll(".project-title");
 
@@ -39,15 +39,17 @@ const MobileHeader = () => {
         item.closest(".container-section").style.display = "none";
       }
     });
+  }*/
+  function search(evt) {
+    props.onChangeHandler(evt.currentTarget.value);
   }
-
   return (
     <div className="mobile-header">
       <div className="left_column">
         <div className="mobile-search">
           <input
             type="text"
-            onInput={search_left_column}
+            onChange={search}
             className="input-search_left_column"
             placeholder="Search for..."
           />

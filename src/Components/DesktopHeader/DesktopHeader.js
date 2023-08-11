@@ -15,7 +15,10 @@ const DesktopHeader = (props) => {
 
         <Tip showDropHeader={props.showDropHeader}></Tip>
       </div>
-      <MobileHeader />
+      <MobileHeader
+        inputValue={props.inputValue}
+        onChangeHandler={props.onChangeHandler}
+      />
     </div>
   );
 };
