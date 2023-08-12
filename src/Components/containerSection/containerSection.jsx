@@ -1,4 +1,4 @@
-import "../container-section/container-section.css";
+import "../containerSection/containerSection.css";
 
 // не нужно везде писать props
 // лучше делай деструктуризацию вот так сразу сonst ContainerSection = ({ icon, title, description })
@@ -25,7 +25,6 @@ const Header = (props) => {
     </header>
   );
 */
-
 
 /* 
 изменить название папки и файла, все компоненты и их папки файлы называем в стиле 

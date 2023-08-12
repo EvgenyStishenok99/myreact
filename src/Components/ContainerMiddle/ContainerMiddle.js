@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../ContainerMiddle/ContainerMiddle.css";
-import ContainerSection from "../container-section/container-section";
+import ContainerSection from "../containerSection/containerSection";
 
 const ContainerMiddle = (props) => {
   return (
