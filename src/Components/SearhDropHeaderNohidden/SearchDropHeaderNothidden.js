@@ -26,6 +26,7 @@ const SearchDropHeaderNothidden = (props) => {
             onChange={search}
             className="input-search"
             placeholder="Search for..."
+            value={props.inputValue}
           />
           <button className="search-button-input">
             <i className="fa fa-search"></i>

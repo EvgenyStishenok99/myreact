@@ -52,6 +52,7 @@ const MobileHeader = (props) => {
             onChange={search}
             className="input-search_left_column"
             placeholder="Search for..."
+            value={props.inputValue}
           />
         </div>
         <ul className="navbar">
