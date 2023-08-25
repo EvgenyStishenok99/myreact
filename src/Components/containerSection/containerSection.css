@@ -56,6 +56,14 @@
     margin-top: 10px;
     margin-bottom: 30px;
   }
+  .edit {
+    margin-left: 240px;
+    margin-top: -25px;
+  }
+  .delete {
+    margin-left: 240px;
+    margin-top: 3px;
+  }
 }
 @media screen and (max-width: 600px) {
   .middle {
@@ -72,5 +80,13 @@
   p {
     margin-top: 10px;
     margin-bottom: 30px;
+  }
+  .edit {
+    margin-left: 240px;
+    margin-top: -25px;
+  }
+  .delete {
+    margin-left: 240px;
+    margin-top: 3px;
   }
 }

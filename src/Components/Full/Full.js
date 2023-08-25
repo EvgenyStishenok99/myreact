@@ -9,7 +9,10 @@ const Full = (props) => {
         inputValue={props.inputValue}
         onChangeHandler={props.onChangeHandler}
       />
-      <ContainerMiddle searchData={props.searchData} />
+      <ContainerMiddle
+        searchData={props.searchData}
+        callBack={props.removeItem}
+      />
     </div>
   );
 };

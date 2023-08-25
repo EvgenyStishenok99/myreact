@@ -1,8 +1,14 @@
 import { useState } from "react";
 import "../ContainerMiddle/ContainerMiddle.css";
 import ContainerSection from "../containerSection/containerSection";
-
+import { useSelector, useDispatch } from "react-redux";
+import { removeItemAC } from "../../store/technologiesReducer";
 const ContainerMiddle = (props) => {
+  const technologies = useSelector((state) => state.technologiesReducer);
+  const dispatch = useDispatch();
+  const removeItem = (id) => {
+    dispatch(removeItemAC(id));
+  };
   return (
     <div className="container-middle">
       <div className="middle">
@@ -15,13 +21,14 @@ const ContainerMiddle = (props) => {
           <strong>Spring имеет модульную конструкцию</strong>
         </p>
         <div className="section-content">
-          {props.searchData.map((item) => {
+          {technologies.map((item) => {
             return (
               <ContainerSection
                 key={item.id}
                 icon={item.icon}
                 title={item.title}
                 description={item.description}
+                callBack={removeItem}
               />
             );
           })}
