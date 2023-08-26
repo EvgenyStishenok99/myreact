@@ -26,6 +26,7 @@ const App = () => {
         searchData={searchData}
       />
     </div>
+   
   );
 };
 

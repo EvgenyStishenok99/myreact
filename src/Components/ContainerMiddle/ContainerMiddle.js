@@ -9,6 +9,7 @@ const ContainerMiddle = (props) => {
   const removeItem = (id) => {
     dispatch(removeItemAC(id));
   };
+
   return (
     <div className="container-middle">
       <div className="middle">

@@ -8,13 +8,15 @@ const ContainerSection = ({ callBack, id, icon, title, description }) => {
   };
   return (
     <div className="container-section">
-      <Edit className="edit">
-        <EditIcon></EditIcon>
-      </Edit>
-      <div className="delete" onClick={removeItem(id)}>
-        <DeleteOutlineIcon></DeleteOutlineIcon>
-      </div>
+      <div className="batton">
+        <Edit className="edit">
+          <EditIcon></EditIcon>
+        </Edit>
 
+        <div className="delete" onClick={() => removeItem(id)}>
+          <DeleteOutlineIcon></DeleteOutlineIcon>
+        </div>
+      </div>
       <div className="container-logo">
         <div id={icon}></div>
       </div>

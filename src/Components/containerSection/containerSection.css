@@ -31,15 +31,10 @@
   color: #34302d;
   text-align: center;
 }
-.edit {
-  margin-left: 240px;
-  margin-top: -25px;
+.batton {
+  margin-left: 110%;
+  margin-top: -10%;
 }
-.delete {
-  margin-left: 240px;
-  margin-top: 3px;
-}
-
 @media screen and (max-width: 1000px) and (min-width: 601px) {
   .project-title {
     height: 15px;
@@ -56,13 +51,9 @@
     margin-top: 10px;
     margin-bottom: 30px;
   }
-  .edit {
-    margin-left: 240px;
-    margin-top: -25px;
-  }
-  .delete {
-    margin-left: 240px;
-    margin-top: 3px;
+  .batton {
+    margin-left: 110%;
+    margin-top: -10%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -81,12 +72,8 @@
     margin-top: 10px;
     margin-bottom: 30px;
   }
-  .edit {
-    margin-left: 240px;
-    margin-top: -25px;
-  }
-  .delete {
-    margin-left: 240px;
-    margin-top: 3px;
+  .batton {
+    margin-left: 110%;
+    margin-top: -10%;
   }
 }
